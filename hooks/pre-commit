@@ -3,7 +3,7 @@ LC_ALL=C
 
 local_branch="$(git rev-parse --abbrev-ref HEAD)"
 
-valid_branch_prefix="^(feature|bug|experiment|release|hotfix)\/[a-z0-9-]+$"
+valid_branch_prefix="^(feature|bug|experiment|release|hotfix)\/[A-Za-z0-9]+[a-z0-9-]+$"
 whitelist="(^dev$|^master$|^ionic$|^angular$|^react$|^reactnative$)"
 
 message="There is something wrong with your branch name.
